@@ -1,0 +1,30 @@
+{
+  "name": "Backend_Weadding_invitation",
+  "version": "1.0.0",
+  "description": "Weadding Invitation",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "nodemon": "latest",
+    "prettier": "latest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.1",
+    "sequelize": "^6.31.1"
+  }
+}
