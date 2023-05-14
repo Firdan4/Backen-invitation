@@ -13,6 +13,8 @@ app.use(express.json());
 
 app.use(cors({ origin: true, credentials: true }));
 
+app.use('/theme', express.static('theme'));
+
 // sequelize
 sequelize
   .authenticate()

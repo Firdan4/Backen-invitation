@@ -42,6 +42,8 @@ const upload = multer({
   { name: 'foto5', maxCount: 1 },
 ]);
 
-router.post('/theme/luxuri', upload, Controller.CreateInvitation);
+router.post('/theme/luxuri/create', upload, Controller.CreateInvitation);
+router.get('/theme/luxuri/:id', Controller.getDataInvitation);
+router.put('/theme/luxuri/update/:id', upload, Controller.updateDataInvitation);
 
 module.exports = router;
