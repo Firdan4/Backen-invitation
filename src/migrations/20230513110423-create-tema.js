@@ -9,10 +9,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      id_tema: {
-        type: Sequelize.INTEGER,
-      },
       nama_tema: {
+        type: Sequelize.STRING,
+      },
+      image: {
+        type: Sequelize.STRING,
+      },
+      link: {
         type: Sequelize.STRING,
       },
       createdAt: {

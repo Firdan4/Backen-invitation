@@ -3,7 +3,8 @@ const express = require('express');
 const cors = require('cors');
 
 const user = require('./routes/userRouter');
-const luxuri = require('./routes/LuxuriRouter');
+const luxuri = require('./routes/invitationRouter');
+const theme = require('./routes/ThemeRouter');
 const { sequelize } = require('./models');
 
 const app = express();
@@ -27,6 +28,7 @@ sequelize
 
 app.use('/', user);
 app.use('/', luxuri);
+app.use('/', theme);
 
 app.listen(process.env.SERVER_PORT, () => {
   console.log('Server Running');

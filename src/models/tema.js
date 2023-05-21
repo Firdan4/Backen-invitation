@@ -13,8 +13,9 @@ module.exports = (sequelize, DataTypes) => {
   }
   tema.init(
     {
-      id_tema: DataTypes.INTEGER,
       nama_tema: DataTypes.STRING,
+      image: DataTypes.STRING,
+      link: DataTypes.STRING,
     },
     {
       sequelize,
